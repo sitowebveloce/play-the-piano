@@ -13,7 +13,7 @@ If you use [Audacity](https://www.audacityteam.org/) you can record the music an
 - Javascript
 
 ## Run
-To run this project you cad use [http-server](https://www.npmjs.com/package/http-server)
+To run this project you can use [http-server](https://www.npmjs.com/package/http-server)
 
 - You need to have [Node.js](https://nodejs.org/) installed in your system.
 
