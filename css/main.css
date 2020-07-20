@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('/img/sound-wave.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.piano {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 100px);
+    transition: 3s ease-in-out;
+}
+
+div.title {
+    background: #414142;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 20px;
+    text-align: center;
+    color: #06BAFE;
+    padding: 10px;
+}
+
+div.title img {
+    width: 100px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    text-transform: uppercase;
+    margin: 10px auto;
+    font-weight: bold;
+    color: #06BAFE;
+    background: #414142;
+    box-shadow: inset 1px 1px 2px #06BAFE, inset -1px -1px 2px #06bafe, inset 1px 1px 2px #06bafe, inset -1px -1px 2px #06bafe;
+    transition: 1s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(.96);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    div.title img {
+        width: 50px;
+    }
+    div.title {
+        width: 100%;
+    }
+    .piano {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    button {
+        margin: 4px;
+    }
+}
+
+a.home img {
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+a.home img:hover {
+    transform: scale(1.1);
+}
